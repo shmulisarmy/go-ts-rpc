@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"net/http"
-	"os"
 
 	"github.com/gorilla/websocket"
 )
@@ -47,18 +46,18 @@ func handleWebSocket(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func main() {
-	Load_file("main.go")
-	Load_file("parser.go")
-	fmt.Println("functions_in_file: ", functions_in_file)
+// func main() {
+// 	Load_file("main.go")
+// 	Load_file("parser.go")
+// 	fmt.Println("functions_in_file: ", functions_in_file)
 
-	os.WriteFile(typescriptRPCFileName, []byte(""), 0644)
+// 	os.WriteFile(typescriptRPCFileName, []byte(""), 0644)
 
-	Setup_rpc(add)
-	Setup_rpc(printNum)
-	Setup_rpc(Load_file)
+// 	Setup_rpc(add)
+// 	Setup_rpc(printNum)
+// 	Setup_rpc(Load_file)
 
-	http.HandleFunc("/ws", handleWebSocket)
-	http.ListenAndServe(":8080", nil)
+// 	http.HandleFunc("/ws", handleWebSocket)
+// 	http.ListenAndServe(":8080", nil)
 
-}
+// }
