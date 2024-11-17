@@ -1,4 +1,4 @@
-module rpc
+module github.com/shmulisarmy/go-ts-rpc
 
 go 1.23.2
 
