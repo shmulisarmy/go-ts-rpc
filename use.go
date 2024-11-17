@@ -48,15 +48,15 @@ func handleWebSocket(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	load_file("main.go")
-	load_file("parser.go")
+	Load_file("main.go")
+	Load_file("parser.go")
 	fmt.Println("functions_in_file: ", functions_in_file)
 
 	os.WriteFile(typescriptRPCFileName, []byte(""), 0644)
 
-	setup_rpc(add)
-	setup_rpc(printNum)
-	setup_rpc(load_file)
+	Setup_rpc(add)
+	Setup_rpc(printNum)
+	Setup_rpc(Load_file)
 
 	http.HandleFunc("/ws", handleWebSocket)
 	http.ListenAndServe(":8080", nil)

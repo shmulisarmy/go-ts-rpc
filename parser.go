@@ -94,7 +94,7 @@ func make_typescript_function_call_code(functionInfo *function_info) string {
 }
 
 // Generate TypeScript definitions for a function
-func setup_rpc(fn interface{}) {
+func Setup_rpc(fn interface{}) {
 	fnType := reflect.TypeOf(fn)
 	if fnType.Kind() != reflect.Func {
 		panic("Not a function")
@@ -189,7 +189,7 @@ func callFunction(funcName string, args []interface{}) (interface{}, error) {
 var functions_in_file map[string]map[string]*function_info = make(map[string]map[string]*function_info)
 var function_to_file map[string]string = make(map[string]string)
 
-func load_file(filename string) {
+func Load_file(filename string) {
 	file, err := os.Open(filename)
 	if err != nil {
 		panic(err)
