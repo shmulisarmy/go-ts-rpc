@@ -1,4 +1,4 @@
 github.com/gorilla/websocket v1.5.3 h1:saDtZ6Pbx/0u+bgYQ3q96pZgCzfhKXGPqt7kZ72aNNg=
 github.com/gorilla/websocket v1.5.3/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
-github.com/shmulisarmy/go-ts-rpc v1.0.1 h1:NkpU+fqCK7g+4NkUM9uDzwOytqSDXIfwoe/FsTGsEkU=
-github.com/shmulisarmy/go-ts-rpc v1.0.1/go.mod h1:INYHCNxYxVEheCqiYz70wHaETQHcjqxmYxea98CyEm4=
+github.com/shmulisarmy/go-ts-rpc v1.0.2 h1:Df1URxEhkIwvDNje2WPKJsFu/Qk3zyad2iyvgeiTn8c=
+github.com/shmulisarmy/go-ts-rpc v1.0.2/go.mod h1:INYHCNxYxVEheCqiYz70wHaETQHcjqxmYxea98CyEm4=
